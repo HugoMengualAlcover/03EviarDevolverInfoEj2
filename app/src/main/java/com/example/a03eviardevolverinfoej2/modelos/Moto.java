@@ -1,14 +1,19 @@
 package com.example.a03eviardevolverinfoej2.modelos;
 
-public class Moto {
+import java.io.Serializable;
+
+public class Moto implements Serializable {
     String marca;
     String modelo;
-    String color;
+    String cilindrada;
 
-    public Moto(String marca, String modelo, String color) {
+    public Moto() {
+    }
+
+    public Moto(String marca, String modelo, String cilindrada) {
         this.marca = marca;
         this.modelo = modelo;
-        this.color = color;
+        this.cilindrada = cilindrada;
     }
 
     public String getMarca() {
@@ -27,11 +32,11 @@ public class Moto {
         this.modelo = modelo;
     }
 
-    public String getColor() {
-        return color;
+    public String getCilindrada() {
+        return cilindrada;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String cilindrada) {
+        this.cilindrada = cilindrada;
     }
 }
